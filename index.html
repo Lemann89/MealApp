@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dbb9d28b58.js" crossorigin="anonymous"></script>
+    <title>Meal App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Meal App</h1>
+        <div class="flex">
+            <form id="submit" class="flex">
+                <input type="text" id="search">
+                <button class="search-btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+            <button class="random-btn" id="random">
+                <i class="fas fa-random"></i>
+            </button>
+        </div>
+
+        <div id="result-heading"></div>
+        <div class="meals" id="meals"></div>
+        <div id="single-meal">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
