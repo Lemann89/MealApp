@@ -84,6 +84,10 @@ function addMealToDom(meal){
                     ${ingredients.map(ing => `<li>${ing}</li>`).join('')}
                 </ul>
                 <p>${meal.strInstructions}</p>
+                <h2>Video</h2>
+                <iframe id="ytplayer" type="text/html" width="640" height="360"
+                src="${meal.strYoutube.replace('watch?v=', 'embed/')}"
+                frameborder="0"/>
                 <a href="${meal.strYoutube}" class="watch-video">Watch video</a>
             `;
 }
